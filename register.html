@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<title>Sign In</title>
+</head>
+
+<body>
+<div data-role="header">
+<h1> Title </h1>
+</div>
+
+<div data-role="content">
+<form action="#" method="post">
+  <input type="text" name="name" placeholder="이름"/>
+  <input type="tel" name="tel" placeholder="연락처"/>
+  <input type="email" name="email" placeholder="E-Mail"/>
+  <input type="text" name="doc_num" placeholder="의사허가증번호"/>
+  
+  <input list="nation" name="nation" placeholder="국가"/>
+  <datalist id="nation">
+    <option value="South Korea"/>
+    <option value="North Korea"/>
+    <option value="United States"/>
+    <option value="England"/>
+    <option value="France"/>
+  </datalist>
+  
+  <input list="location" name="location" placeholder="세부지역"/>
+  <datalist id="location">
+    <option value="세부지역 1"/>
+    <option value="세부지역 2"/>
+    <option value="세부지역 3"/>
+    <option value="세부지역 4"/>
+    <option value="세부지역 5"/>
+  </datalist>
+  
+  <input list="subject" name="subject" placeholder="진료과목"/>
+  <datalist id="subject">
+    <option value="외과"/>
+    <option value="내과"/>
+    <option value="신경외과"/>
+    <option value="이비인후과"/>
+    <option value="흉부외과"/>
+  </datalist>
+  
+  <input type="submit" value="Register"/>
+</form>
+<a href="login.html" class="ui-btn">Cancel</a>
+</div>
+
+<div data-role="footer">
+<h4>Tooter Section</h4>
+</div>
+</body>
+</html>

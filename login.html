@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<title>First Page</title>
+</head>
+
+<body>
+<div data-role="header">
+<h1> Title </h1>
+</div>
+
+<div data-role="content">
+<form action="#" method="post">
+  <input type="text" name="id"/>
+  <input type="password" name="password"/>
+  <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+  	<input type="radio" name="radio_choice" id="doctor" value="doctor">
+    <label for="doctor">Doctor</label>
+    <input type="radio" name="radio_choice" id="patient" value="patient">
+    <label for="patient">patient</label>
+  </fieldset>
+  <input type="submit" value="Login"/>
+</form>
+<a href="register.html" class="ui-btn">Sign In</a>
+</div>
+
+<div data-role="footer">
+<h4>Tooter Section</h4>
+</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<title>Patient Detail Page</title>
+</head>
+
+<body>
+<div data-role="page" id="basic_info">
+<div data-role="header">
+<h1> Patient Name </h1>
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#basic_info" class="ui-btn-active">기본건강</a></li>
+    <li><a href="#diagnosis">진단표</a></li>
+    <li><a href="#chat">채팅</a></li>
+  </ul>
+</div>
+</div>
+
+<div data-role="content">
+<label for="gender">성별</label>
+<input type="text" name="gender">
+<label for="height">키</label>
+<input type="text" name="height">
+<label for="weight">몸무게</label>
+<input type="text" name="weight">
+<label for="med_history">병력</label>
+<input type="text" name="med_history">
+</div>
+
+<div data-role="footer">
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#" class="ui-btn-active">Patient List</a></li>
+    <li><a href="#">Message</a></li>
+  </ul>
+</div>
+</div><!-- end of footer -->
+</div><!-- end of basic page -->
+
+<div data-role="page" id="diagnosis">
+<div data-role="header">
+<h1> Patient Name </h1>
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#basic_info" >기본건강</a></li>
+    <li><a href="#diagnosis" class="ui-btn-active">진단표</a></li>
+    <li><a href="#chat">채팅</a></li>
+  </ul>
+</div>
+</div>
+
+<div data-role="content">
+<a href="patient_dialog" class="ui-btn ui-btn-inline">작성</a>
+<br/>
+
+<a href="patient_dialog.html" class="ui-btn" >2016/01/01</a>
+<a href="patient_dialog.html" class="ui-btn" >2016/01/05</a>
+<a href="patient_dialog.html" class="ui-btn" >2016/01/10</a>
+<a href="patient_dialog.html" class="ui-btn" >2016/01/15</a>
+<a href="patient_dialog.html" class="ui-btn" >2016/01/21</a>
+
+</div>
+
+<div data-role="footer">
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#" class="ui-btn-active">Patient List</a></li>
+    <li><a href="#">Message</a></li>
+  </ul>
+</div>
+</div>
+</div><!-- end of diagnosis page -->
+
+<div data-role="page" id="chat">
+<div data-role="header">
+<h1> Patient Name </h1>
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#basic_info">기본건강</a></li>
+    <li><a href="#diagnosis">진단표</a></li>
+    <li><a href="#chat" class="ui-btn-active">채팅</a></li>
+  </ul>
+</div>
+</div>
+
+<div data-role="content">
+</div>
+
+<div data-role="footer">
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#" class="ui-btn-active">Patient List</a></li>
+    <li><a href="#">Message</a></li>
+  </ul>
+</div>
+</div>
+</div><!-- end of chat page -->
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<title>Message Tab</title>
+<style type="text/css">
+table{
+	width: 100%;
+	margin-top: -82px;
+}
+
+tbody tr td {
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<div data-role="page" id="doctor">
+<div data-role="header">
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#doctor" class="ui-btn-active">의사</a></li>
+    <li><a href="#patient">환자</a></li>
+    <li><a href="#recent">최근채팅</a></li>
+  </ul>
+</div>
+</div>
+
+<div data-role="content">
+<form>
+    <input id="filterTable-input-doctor" data-type="search">
+</form>
+<table id="doctor-table" data-filter="true" data-input="#filterTable-input-doctor" >
+    <thead>
+        <tr>
+            <th data-priority="1">Photo</th>
+            <th data-priority="2">이름</th>
+            <th data-priority="3">국가</th>
+            <th data-priority="4">분야</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Name 1</td>
+                <td>Nation 1</td>
+                <td>Subject 1</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Name 2</td>
+                <td>Nation 2</td>
+                <td>Subject 2</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Name 3</td>
+                <td>Nation 3</td>
+                <td>Subject 3</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div data-role="footer">
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#">Patient List</a></li>
+    <li><a href="#" class="ui-btn-active">Message</a></li>
+  </ul>
+</div>
+</div>
+
+</div>
+<!-- end of doctor page -->
+
+<div data-role="page" id="patient">
+<div data-role="header">
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#doctor">의사</a></li>
+    <li><a href="#patient" class="ui-btn-active">환자</a></li>
+    <li><a href="#recent">최근채팅</a></li>
+  </ul>
+</div>
+</div>
+
+<div data-role="content">
+<form>
+    <input id="filterTable-input-patient" data-type="search">
+</form>
+<table id="patient-table" data-filter="true" data-input="#filterTable-input-patient" >
+    <thead>
+        <tr>
+            <th data-priority="1">Photo</th>
+            <th data-priority="2">이름</th>
+            <th data-priority="3">국가</th>
+            <th data-priority="4">분야</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Name 1</td>
+                <td>Nation 1</td>
+                <td>Subject 1</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Name 2</td>
+                <td>Nation 2</td>
+                <td>Subject 2</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Name 3</td>
+                <td>Nation 3</td>
+                <td>Subject 3</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div data-role="footer">
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#">Patient List</a></li>
+    <li><a href="#" class="ui-btn-active">Message</a></li>
+  </ul>
+</div>
+</div>
+</div>
+<!-- end of patient page -->
+
+<div data-role="page" id="recent">
+<div data-role="header">
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#doctor" >의사</a></li>
+    <li><a href="#patient">환자</a></li>
+    <li><a href="#recent" class="ui-btn-active">최근채팅</a></li>
+  </ul>
+</div>
+</div>
+
+<div data-role="content">
+<form>
+    <input id="filterTable-input-recent" data-type="search">
+</form>
+<table id="recent-table" data-filter="true" data-input="#filterTable-input-recent" >
+    <thead>
+        <tr>
+            <th data-priority="1">Photo</th>
+            <th data-priority="2">이름</th>
+            <th data-priority="3">국가</th>
+            <th data-priority="4">분야</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>Name 1</td>
+                <td>Nation 1</td>
+                <td>Subject 1</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>Name 2</td>
+                <td>Nation 2</td>
+                <td>Subject 2</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td>Name 3</td>
+                <td>Nation 3</td>
+                <td>Subject 3</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div data-role="footer">
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#">Patient List</a></li>
+    <li><a href="#" class="ui-btn-active">Message</a></li>
+  </ul>
+</div>
+</div>
+</div>
+<!-- end of recent page -->
+</body>
+</html>

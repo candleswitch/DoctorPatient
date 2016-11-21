@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<style type="text/css">
+#subscription {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<title>Patient Dialog</title>
+</head>
+
+<body>
+<div data-role="page">
+<div data-role="header">
+<h1> Patient Name </h1>
+<div data-role="navbar">
+  <ul>
+  	<li><a href="patient_detail.html" >기본건강</a></li>
+    <li><a href="#diagnosis" class="ui-btn-active">진단표</a></li>
+    <li><a href="#">채팅</a></li>
+  </ul>
+</div>
+</div>
+
+<div data-role="content">
+
+<label for="subscription">내용</label>
+<input type="text" id="subscription" />
+
+<a href="doctorlist.html" class="ui-btn ui-btn-inline">보내기</a>
+
+</div>
+
+<div data-role="footer">
+<div data-role="navbar">
+  <ul>
+  	<li><a href="#" class="ui-btn-active">Patient List</a></li>
+    <li><a href="#">Message</a></li>
+  </ul>
+</div>
+</div>
+
+</div>
+</body>
+</html>
